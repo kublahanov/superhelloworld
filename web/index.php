@@ -28,7 +28,7 @@ $app->get('/', function() use ($app, $ip) {
         'ip' => $ip
     );
 
-    // Рендрим шаблон и выводим его в браузер пользователя
+    // Рендерим шаблон и выводим его в браузер пользователя
     return $app['twig']->render('layout.twig', $templateVars);
 
 });
